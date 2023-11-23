@@ -55,7 +55,7 @@ def get_user_profile():
         'tweets': tweet_details
     }
 
-# Example route for following a user
+# following a user
 @user_blueprint.route("/follow/<int:user_id>", methods=["POST"])
 def follow_user(user_id):
     authorization_header = request.headers.get('Authorization')
@@ -94,7 +94,7 @@ def follow_user(user_id):
 
     return {"message": "You are already following this user"}
 
-# Example route for unfollowing a user
+# unfollowing a user
 @user_blueprint.route("/unfollow/<int:user_id>", methods=["POST"])
 def unfollow_user(user_id):
     authorization_header = request.headers.get('Authorization')
