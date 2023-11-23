@@ -271,3 +271,11 @@ class Tweet(db.Model):
 
     return {"message": "You were not following this user"}
 ```
+
+here's the .env file 
+
+```
+DATABASE_URL = "postgresql://postgres:Smandak123!@db.mjkouqmjrruzrcgmakws.supabase.co:5432/postgres"
+SECRET_KEY = "RAHASIADONG"
+
+```
