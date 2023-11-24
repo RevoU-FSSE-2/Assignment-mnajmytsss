@@ -1,6 +1,6 @@
 from flask import Blueprint, request
 from user.models import User, db
-from tweet.models import Tweet  # Import the Tweet model
+from tweet.models import Tweet  
 from auth.utils import decode_jwt
 
 user_blueprint = Blueprint("user", __name__)
